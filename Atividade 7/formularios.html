@@ -1,0 +1,231 @@
+<!doctype html>
+
+<html lang="pt-br">
+
+	<head> 
+		<title>Formulários - Stella</title>
+		<meta charset="utf-8" />
+	</head>
+
+	<body align="center">
+
+	<font face="Arial">
+		<h1>Formulário 1</h1>
+
+		<table align="center">
+        <tbody>
+            <tr>
+                <td>
+                   <fieldset>
+                       <legend><b>Digite seus dados</b></legend>
+                       <form action="enviar.php" method="post" name="cadastro">
+                       	<!-- GET: MAIS RÁPIDO, porém MENOS SEGURO (nunca usar GET para enviar dados confidenciais pois os dados do formulário enviado são visíveis na URL). O comprimento de um URL também é limitado (2.048 caracteres) / 
+                       	POST: MAIS LENTO em relação ao GET, porém MAIS SEGURO (sempre usar POST se os dados do formulário contiverem informações confidenciais ou pessoais). Não tem limitações de tamanho e pode ser usado para enviar grandes quantidades de dados. /
+                       	A opção AUTOCOMPLETE="OFF" limpa os dados do cachê -->
+
+                            <table cellpadding="7">
+
+                                <tr align="center">
+                                    <td><label for="nome"><b>Nome:</b></label></td>
+                                    <!-- Colocar a label igual ao id para fazer o link entre os dois-->
+                                    <td><input type="text" name="nome" id="nome" size="40" maxlength="30" placeholder="Digite seu nome"/></td>
+                                    <!-- Size = tamanho do campo / Maxlenght = número de caracteres permitidos /
+                                    Placeholder = o que vem pré-escrito/definido dentro do campo (se colocar como Value, a também deixa escrito algo porém a pessoa terá que apagar antes de escrever) -->
+                                </tr>
+                                <tr align="center">
+                                    <td><label for="email"><b>E-mail:</b></label></td>
+                                    <td><input type="email" name="email" id="email" size="40" maxlength="30" placeholder="Digite seu e-mail"/></td>
+                                </tr>
+
+                                <tr align="center">
+                                    <td><label for="telefone"><b>Telefone:</b></label></td>
+                                    <td><input type="text" name="telefone" id="telefone" size="40" maxlength="15" placeholder="Digite seu telefone"/></td>
+                                </tr>
+
+                                <tr align="center">
+                                    <td><label for="sexo"><b>Sexo:</b></label></td>
+                                    <td align="left">
+                                        <input type="radio" name="sexo" id="sexo" value="feminino"/>
+                                        <label>Feminino</label>
+                                        <input type="radio" name="sexo" id="sexo" value="masculino"/>
+                                        <label>Masculino</label>
+                                        </td>
+                                </tr>
+
+                                <tr align="center">
+                                    <td><label for="senha"><b>Senha:</b></label></td>
+                                    <td><input type="password" name="senha" id="senha" size="40" maxlength="40" placeholder="Digite sua senha (máximo de 40 caracteres)"/></td>
+                                    <!-- Input PASSWORD coloca "máscara", para não aparecer o que a pessoa digita -->
+                                </tr>
+
+                                <tr align="center">
+                                    <td><label for="dataNascimento"><b>Data de Nascimento:</b></label></td>
+                                    <td align="left"><input type="date" name="dataNascimento" id="dataNascimento"/></td>
+                                    <!-- Input DATE aparece calendário relacionado -->
+                                </tr>
+
+                                <tr align="center">
+                                    <td><label for="comida"><b>Comida Favorita:</b></label></td>
+                                    <td align="left">
+                                        <input type="checkbox" name="pizza" id="pizza" value="pizza"/>
+                                        <label for="pizza">Pizza</label>
+                                        <!-- O ID do input, estando igual ao LABEL FOR, a pessoa consegue clicar em cima da palavra para selecionar o checkbox -->
+                                        <br>
+                                        <input type="checkbox" name="hamburguer" id="hamburguer" value="hamburguer"/>
+                                        <label for="hamburguer">Hamburguer</label>
+                                        <br>
+                                        <input type="checkbox" name="macarrão" id="macarrão" value="macarrão"/>
+                                        <label for="macarrão">Macarrão</label>
+                                        <br>
+                                        <input type="checkbox" name="hotdog" id="hotdog" value="hotdog"/>
+                                        <label for="hotdog">Cachorro-quente</label>
+                                        <br>
+                                        <input type="checkbox" name="sushi" id="sushi" value="sushi"/>
+                                        <label for="sushi">Sushi</label>
+                                        <br>
+                                        <input type="checkbox" name="batata" id="batata" value="batata"/>
+                                        <label for="batata">Batata frita</label>
+                                        <br>
+                                        <input type="checkbox" name="lasanha" id="lasanha" value="lasanha"/>
+                                        <label for="lasanha">Lasanha</label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><label for="opcao"><b>Deseja receber notícias por e-mail?</b></label></td>
+                                    <td>
+                                        <input type="radio" name="opcao" id="opcao" value="sim"/>
+                                        <label>Sim</label>
+                                        <input type="radio" name="opcao" id="opcao" value="nao"/>
+                                        <label>Não</label>
+                                        </td>
+                                </tr>
+
+                                <tr align="center">
+                                    <td><label for="estado"><b>Estado:</b></label></td>
+                                    <td align="left">
+                                        <select name="estado" id="estado">
+                                            <option value="" selected>--- Selecione ---</option>
+
+                                            <optgroup label="Região Norte">
+                                                <option value="ac">Acre</option>
+                                                <option value="ap">Amapá</option>
+                                                <option value="am">Amazonas</option>
+                                                <option value="pa">Pará</option>
+                                                <option value="ro">Rondônia</option>
+                                                <option value="rr">Roraima</option>
+                                                <option value="to">Tocantins</option>
+                                            </optgroup>
+
+                                            <optgroup label="Região Nordeste">
+                                                <option value="al">Alagoas</option>
+                                                <option value="ba">Bahia</option>
+                                                <option value="ce">Ceará</option>
+                                                <option value="ma">Maranhão</option>
+                                                <option value="pb">Paraíba</option>
+                                                <option value="pe">Pernambuco</option>
+                                                <option value="pi">Piauí</option>
+                                                <option value="rn">Rio Grande do Norte</option>
+                                                <option value="se">Sergipe</option>
+                                            </optgroup>
+
+                                            <optgroup label="Região Centro-Oeste">
+                                                <option value="go">Goiás</option>
+                                                <option value="mt">Mato Grosso</option>
+                                                <option value="ms">Mato Grosso do Sul</option>
+                                            </optgroup>
+
+                                            <optgroup label="Região Sudeste">
+                                            	<option value="es">Espiríto Santo</option>
+                                                <option value="mg">Minas Gerais</option>
+                                                <option value="rj">Rio de Janeiro</option>
+                                                <option value="sp">São Paulo</option>          
+                                            </optgroup>
+
+                                            <optgroup label="Região Sul">
+                                            	<option value="pr">Paraná</option>
+                                                <option value="rs">Rio Grande do Sul</option>
+                                                <option value="sc">Santa Catarina</option>      
+                                            </optgroup>
+
+                                        </select>
+                                    </td>
+                                </tr>
+                                
+                                <tr align="center">
+                                    <td><label for="comentario"><b>Comentário:</b></label></td>
+                                    <td align="left"><textarea name="comentario" id="comentario" cols="42" rows="10" maxlength="300"></textarea></td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="2" align="center">
+                                        <input type="submit" value="Enviar" id="enviar" name="enviar"/>
+                                        <input type="reset" value="Limpar" id="limpar" name="limpar"/>
+                                        <input type="submit" value="Salvar" id="salvar" name="salvar"/>
+                                        <button type="submit" id="Encaminhar" name="encaminhar">
+                                            <img src="andando.gif" alt="Botão" width="60" height="30"/>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </form>
+                   </fieldset> 
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br /><br />
+
+	<h1>Formulário 2</h1>
+	<h3>Preencha seus dados</h3>
+
+	<table align="center" cellpadding="7">
+		<tr>
+			<td><label for="nome"><b>Nome:</b></label></td>
+	    	<td><input type="text" name="nome" id="nome" size="40" maxlength="30" /></td>
+	    </tr>
+
+	    <tr>
+			<td><label for="email"><b>E-mail:</b></label></td>
+            <td><input type="email" name="email" id="email" size="40" maxlength="30" /></td>
+	    </tr>
+
+	    <tr>
+			<td><label for="endereco"><b>Endereço:</b></label></td>
+	    	<td><input type="text" name="endereco" id="endereco" size="40" maxlength="30" /></td>
+	    </tr>
+
+	    <tr>
+			<td><label for="cidade"><b>Cidade:</b></label></td>
+	    	<td><input type="text" name="cidade" id="cidade" size="40" maxlength="30" /></td>
+	    </tr>
+
+	    <tr>
+			<td><label for="telefone"><b>Telefone:</b></label></td>
+	    	<td align="left">
+	    		<input type="text" name="telefone" id="telefone" size="3" maxlength="5" placeholder="DDD" />
+	    		<input type="text" name="telefone" id="telefone" size="31" maxlength="10" /></td>
+	    </tr>
+
+	    <tr>
+			<td><label for="usuario"><b>Usuário:</b></label></td>
+	    	<td><input type="text" name="usuario" id="usuario" size="40" maxlength="30" placeholder="Digite seu login" /></td>
+	    </tr>
+
+	    <tr>
+	    	<td><label for="senha"><b>Senha:</b></label></td>
+            <td><input type="password" name="senha" id="senha" size="40" maxlength="40" /></td>
+	    </tr>
+
+	    <tr>
+	    	<td colspan="2"><input type="submit" value="Finalizar minha inscrição" id="enviar" name="enviar" /></td>
+	    </tr>
+
+	</table>
+
+	</font>	
+	</body>
+
+</html>
