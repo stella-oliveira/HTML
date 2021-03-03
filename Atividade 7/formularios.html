@@ -181,50 +181,51 @@
 	<h1>Formulário 2</h1>
 	<h3>Preencha seus dados</h3>
 
-	<table align="center" cellpadding="7">
-		<tr>
-			<td><label for="nome"><b>Nome:</b></label></td>
-	    	<td><input type="text" name="nome" id="nome" size="40" maxlength="30" /></td>
-	    </tr>
+    <form action="enviar.php" method="post" name="cadastro">
+    	<table align="center" cellpadding="7">
+    		<tr>
+    			<td><label for="nome"><b>Nome:</b></label></td>
+    	    	<td><input type="text" name="nome" id="nome" size="40" maxlength="30" /></td>
+    	    </tr>
 
-	    <tr>
-			<td><label for="email"><b>E-mail:</b></label></td>
-            <td><input type="email" name="email" id="email" size="40" maxlength="30" /></td>
-	    </tr>
+    	    <tr>
+    			<td><label for="email"><b>E-mail:</b></label></td>
+                <td><input type="email" name="email" id="email" size="40" maxlength="30" /></td>
+    	    </tr>
 
-	    <tr>
-			<td><label for="endereco"><b>Endereço:</b></label></td>
-	    	<td><input type="text" name="endereco" id="endereco" size="40" maxlength="30" /></td>
-	    </tr>
+    	    <tr>
+    			<td><label for="endereco"><b>Endereço:</b></label></td>
+    	    	<td><input type="text" name="endereco" id="endereco" size="40" maxlength="30" /></td>
+    	    </tr>
 
-	    <tr>
-			<td><label for="cidade"><b>Cidade:</b></label></td>
-	    	<td><input type="text" name="cidade" id="cidade" size="40" maxlength="30" /></td>
-	    </tr>
+    	    <tr>
+    			<td><label for="cidade"><b>Cidade:</b></label></td>
+    	    	<td><input type="text" name="cidade" id="cidade" size="40" maxlength="30" /></td>
+    	    </tr>
 
-	    <tr>
-			<td><label for="telefone"><b>Telefone:</b></label></td>
-	    	<td align="left">
-	    		<input type="text" name="telefone" id="telefone" size="3" maxlength="5" placeholder="DDD" />
-	    		<input type="text" name="telefone" id="telefone" size="31" maxlength="10" /></td>
-	    </tr>
+    	    <tr>
+    			<td><label for="telefone"><b>Telefone:</b></label></td>
+    	    	<td align="left">
+    	    		<input type="text" name="telefone" id="telefone" size="3" maxlength="5" placeholder="DDD" />
+    	    		<input type="text" name="telefone" id="telefone" size="31" maxlength="10" /></td>
+    	    </tr>
 
-	    <tr>
-			<td><label for="usuario"><b>Usuário:</b></label></td>
-	    	<td><input type="text" name="usuario" id="usuario" size="40" maxlength="30" placeholder="Digite seu login" /></td>
-	    </tr>
+    	    <tr>
+    			<td><label for="usuario"><b>Usuário:</b></label></td>
+    	    	<td><input type="text" name="usuario" id="usuario" size="40" maxlength="30" placeholder="Digite seu login" /></td>
+    	    </tr>
 
-	    <tr>
-	    	<td><label for="senha"><b>Senha:</b></label></td>
-            <td><input type="password" name="senha" id="senha" size="40" maxlength="40" /></td>
-	    </tr>
+    	    <tr>
+    	    	<td><label for="senha"><b>Senha:</b></label></td>
+                <td><input type="password" name="senha" id="senha" size="40" maxlength="40" /></td>
+    	    </tr>
 
-	    <tr>
-	    	<td colspan="2"><input type="submit" value="Finalizar minha inscrição" id="enviar" name="enviar" /></td>
-	    </tr>
+    	    <tr>
+    	    	<td colspan="2"><input type="submit" value="Finalizar minha inscrição" id="enviar" name="enviar" />&nbsp;&nbsp;<input type="reset" value="Limpar" id="limpar" name="limpar"/></td>
+    	    </tr>
 
-	</table>
-
+    	</table>
+    </form>
 	</font>	
 	</body>
 
