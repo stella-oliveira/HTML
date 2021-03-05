@@ -1,0 +1,127 @@
+* {
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+
+body {
+	font-size: 12px;
+	font-family: 'Courier New', monospace;
+}
+
+iframe {
+	width: 1000px;
+	height: 600px;
+	margin: 40px auto 10px auto;
+	display: block;
+}
+
+header {
+	background: #609A81;
+}
+
+footer {
+	background: #609A81;
+	padding: 30px;
+	height: 62px;
+	font-size: 14px;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+.logo {
+	width: 270px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.buttons {
+	text-align: center;
+}
+
+.button {
+	color: #4f7f6a;
+	background: #FFF;
+	border-radius: 50px;
+	padding: 10px 15px 10px 15px;
+	margin: 0px 20px 0 10px;
+	font-size: 14px;
+	font-weight: bold;
+ 	transition: .5s;
+}
+
+.button:hover {
+	color: #FFF;
+	background: #515151;
+	padding: 15px 20px 15px 20px;
+}
+
+.galeria {
+	text-align: center;
+	width: auto;
+	height: auto;
+	margin: auto;
+	display: inline-block;
+}
+
+.image {
+	width: 300px;
+	height: 370px;
+	margin: 0 10px 0 10px;
+	border-radius: 50px;
+	transition: .5s;
+	transform: scale(.9);
+}
+
+.image:hover {
+	transform: scale(1);
+}
+
+.title {
+	text-align: center;
+	font-family: 'Waiting for the Sunrise', cursive;
+	font-size: 36px;
+	color: #4f7f6a;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.description {
+	font-size: 30px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.buttonshop {
+	padding: 10px 15px;
+	border-radius: 50px 0 0 50px;
+	background: #000;
+	color: #FFF;
+	font-size: 18px;
+	border: 1px solid #000;
+	transition: .5s;
+}
+
+.buttonmore {
+	padding: 10px 15px;
+	border-radius: 0px 50px 50px 0;
+	background: #4f7f6a;
+	color: #FFF;
+	font-size: 18px;
+	transition: .5s;
+	border: 1px solid #4f7f6a;
+}
+
+.buttonshop:hover, .buttonmore:hover {
+	background: #FFF;
+	border: 1px solid #4f7f6a;
+	color: #000;
+}
