@@ -9,3 +9,4 @@ Repositório de estudo sobre a linguagem HTML.
   </ul>
 <p><a href="https://stella-oliveira.github.io/HTML/Atividade%206/tabelas.html" target="_blank">Atividade 6 (Tabelas)</a></p>
 <p><a href="https://stella-oliveira.github.io/HTML/Atividade%207/formularios.html" target="_blank">Atividade 7 (Formulários)</a></p>
+<p><a href="https://stella-oliveira.github.io/HTML/Atividade%208/index.html" target"_blank">Atividade 8 (Iframe)</a></p>
